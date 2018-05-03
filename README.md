@@ -14,12 +14,15 @@ Summary: a tool to simulate neutron resonance signal for neutron resonance imagi
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/imagingreso-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/imagingreso-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/imagingreso-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/imagingreso-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imagingreso/badges/version.svg)](https://anaconda.org/conda-forge/imagingreso)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/imagingreso/badges/downloads.svg)](https://anaconda.org/conda-forge/imagingreso)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-imagingreso-green.svg)](https://anaconda.org/conda-forge/imagingreso) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/imagingreso.svg)](https://anaconda.org/conda-forge/imagingreso) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/imagingreso.svg)](https://anaconda.org/conda-forge/imagingreso) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/imagingreso.svg)](https://anaconda.org/conda-forge/imagingreso) |
 
 Installing imagingreso
 ======================
