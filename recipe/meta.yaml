@@ -1,8 +1,8 @@
 {% set name = "ImagingReso" %}
-{% set version = "1.6.12" %}
+{% set version = "1.6.13" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "e734c54868de34033a4190f4bc661934e5a63d93d6fbaba667a54c624c0ae652" %}
+{% set hash_value = "d328ec8a552992683b7c9046632115b20b3ea632cbece2c49f48047061ebbb51" %}
 
 package:
   name: {{ name|lower }}
