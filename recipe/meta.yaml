@@ -1,8 +1,8 @@
 {% set name = "ImagingReso" %}
-{% set version = "1.6.19" %}
+{% set version = "1.6.20" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "07330289e5c3c8ab6adaba1b361326ac23608fcb5772a52190c63f95542a0888" %}
+{% set hash_value = "556b329ab00b2f09b06b255bc5ffab4b9a695192bae89c7c0e40e0f1ac5e7849" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   
 requirements:
   build:
