@@ -1,25 +1,22 @@
 {% set name = "ImagingReso" %}
-{% set version = "1.6.20" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "556b329ab00b2f09b06b255bc5ffab4b9a695192bae89c7c0e40e0f1ac5e7849" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: cac84010967a860f200f51012347615e9e30648247f686e264322f1c118051f9
 
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  
+
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -31,7 +28,7 @@ requirements:
     - pandas
     - six
     - plotly
-    
+
 test:
   imports:
     - ImagingReso
@@ -41,7 +38,7 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'a tool to simulate neutron resonance signal for neutron resonance imaging'
+  summary: a tool to simulate neutron resonance signal for neutron resonance imaging
   doc_url: http://imagingreso.readthedocs.io/
   dev_url: https://github.com/ornlneutronimaging/ImagingReso
 
