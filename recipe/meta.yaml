@@ -1,5 +1,5 @@
 {% set name = "ImagingReso" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cac84010967a860f200f51012347615e9e30648247f686e264322f1c118051f9
+  sha256: 0154b826ce987d8d54124369ad3905587e6cdce1bc04f31ed8a76598512407a1
 
 build:
   noarch: python
